@@ -14,3 +14,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+Frontend Engineer in Korea.
+
+Study Every, Dream Always.
+
+- 📫 root@yceffort.kr
+- 🏠 https://yceffort.kr
