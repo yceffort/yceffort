@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 
 Frontend Engineer in Korea.
 
-Study Every, Dream Always.
+Study Everyday, Dream Always.
 
 - 📫 root@yceffort.kr
 - 🏠 https://yceffort.kr
