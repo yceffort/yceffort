@@ -21,3 +21,5 @@ Study Everyday, Dream Always.
 
 - 📫 root@yceffort.kr
 - 🏠 https://yceffort.kr
+
+[![yceffort's github stats](https://github-readme-stats.vercel.app/api?username=yceffort&count_private=true&show_icons=true&theme=cobalt)](https://github-readme-stats.vercel.app/api?username=yceffort&count_private=true&show_icons=true&theme=cobalt)
