@@ -26,5 +26,7 @@ Study Everyday, Dream Always.
 
 [![yceffort's github stats](https://github-readme-stats.vercel.app/api?username=yceffort&count_private=true&show_icons=true&theme=cobalt)](https://github-readme-stats.vercel.app/api?username=yceffort&count_private=true&show_icons=true&theme=cobalt)
 
+## Waka Status
+
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
