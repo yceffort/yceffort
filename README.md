@@ -29,13 +29,13 @@ Study Everyday, Dream Always.
 ## Waka Status
 
 <!--START_SECTION:waka-->
-![Profile Views](http://img.shields.io/badge/Profile%20Views-9-blue)
+![Profile Views](http://img.shields.io/badge/Profile%20Views-54-blue)
 
 **🐱 My Github Data** 
 
-> 🏆 2,551 Contributions in the Year 2020
+> 🏆 2,553 Contributions in the Year 2020
  > 
-> 📦 359.9 kB Used in Github's Storage 
+> 📦 360.1 kB Used in Github's Storage 
  > 
 > 💼 Opted to Hire
  > 
