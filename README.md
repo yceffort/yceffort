@@ -1,6 +1,6 @@
-## Hi, there!
+## Hi, there! 👋🏼
 
-Front engieer from Korea. @yceffort
+Frontend engieer from Korea. @yceffort
 
 [![Medium Badge](https://img.shields.io/badge/-@yceffort-03a57a?style=flat-square&labelColor=000000&logo=Medium&link=https://yceffort.kr)](https://yceffort.kr)
 [![Gmail Badge](https://img.shields.io/badge/-root@yceffort.kr-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:root@yceffort.kr)](mailto:root@yceffort.kr)
