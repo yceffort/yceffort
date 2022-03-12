@@ -24,3 +24,7 @@ Frontend engieer from Korea. @yceffort
 ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-black?style=flat-square&logo=google-cloud)
 ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
+
+## 🥰 Looking for something fun
+
+재미있는 것이라면 무엇이든 합니다. 사이드 프로젝트도 좋고, 함께 일할 직장도 좋습니다. [root@yceffort.kr](mailto:root@yceffort.kr)
