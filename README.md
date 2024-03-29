@@ -1,4 +1,4 @@
 # @yceffort
 
-- frontend developer
+- https://resume.yceffort.kr/
 - root@yceffort.kr
