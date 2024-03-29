@@ -1,4 +1,4 @@
 # @yceffort
 
-- yceffort@gmail.com
+- frontend developer
 - root@yceffort.kr
