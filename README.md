@@ -29,7 +29,6 @@ const yceffort = {
 <div align="center">
 
 [![Blog](https://img.shields.io/badge/yceffort.kr-000?style=for-the-badge&logo=vercel&logoColor=white)](https://yceffort.kr)
-[![Twitter](https://img.shields.io/badge/@yceffort__dev-000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/yceffort_dev)
 [![Email](https://img.shields.io/badge/root@yceffort.kr-000?style=for-the-badge&logo=gmail&logoColor=white)](mailto:root@yceffort.kr)
 
 </div>
