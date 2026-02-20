@@ -1,0 +1,10 @@
+name = "ai-newsletter-bot"
+main = "src/index.ts"
+compatibility_date = "2025-02-14"
+
+[triggers]
+crons = ["0 0 * * *"] # 매일 오전 9시 KST (UTC 0시)
+
+[[kv_namespaces]]
+binding = "NEWSLETTER_KV"
+id = "04094491e56f4d5ba4c6074228088a9e"
