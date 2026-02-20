@@ -1,6 +1,5 @@
 import { fetchAllRSS } from './sources/rss'
 import { fetchHackerNews } from './sources/hackernews'
-import { fetchAllReddit } from './sources/reddit'
 import { curateArticles } from './ai/curator'
 import { sendToDiscord } from './discord/sender'
 import { KV_TTL_SECONDS } from './config'
@@ -57,13 +56,12 @@ async function markAsSent(urls: string[], kv: KVNamespace): Promise<void> {
 
 async function runPipeline(env: Env): Promise<string> {
   console.log('Fetching articles from all sources...')
-  const [rssArticles, hnArticles, redditArticles] = await Promise.all([
+  const [rssArticles, hnArticles] = await Promise.all([
     fetchAllRSS(),
     fetchHackerNews(),
-    fetchAllReddit(),
   ])
 
-  const raw = [...rssArticles, ...hnArticles, ...redditArticles]
+  const raw = [...rssArticles, ...hnArticles]
   console.log(`Fetched ${raw.length} articles total`)
 
   const recent = filterRecent(deduplicateByUrl(raw))
@@ -82,10 +80,8 @@ async function runPipeline(env: Env): Promise<string> {
     return 'No new articles to curate'
   }
 
-  // Claude API 응답 시간 절약: 최대 30개만 전송
-  const forCuration = newArticles.slice(0, 30)
-  console.log(`Curating ${forCuration.length} articles with Claude...`)
-  const curated = await curateArticles(forCuration, env.ANTHROPIC_API_KEY)
+  console.log(`Curating ${newArticles.length} articles with Claude...`)
+  const curated = await curateArticles(newArticles, env.ANTHROPIC_API_KEY)
 
   const counts = Object.entries(curated.categories)
     .map(([k, v]) => `${k}: ${v.length}`)
