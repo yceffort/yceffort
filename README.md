@@ -10,32 +10,9 @@ I build things for the web, write books about them, and break them down on my bl
 
 ---
 
-<table>
-<tr>
-<th align="left">What I'm up to</th>
-<th align="left">Books I wrote</th>
-</tr>
-<tr>
-<td valign="top">
+**Now** — Leading frontend at **NAVER Financial** · Shipping OSS at [NaverPayDev](https://github.com/orgs/NaverPayDev/repositories) · Writing at [yceffort.kr](https://yceffort.kr)
 
-<img width="400" height="1" />
-
-- Leading frontend at **NAVER Financial**
-- Shipping open-source tooling at [NaverPayDev](https://github.com/orgs/NaverPayDev/repositories)
-- Blogging deep dives at [yceffort.kr](https://yceffort.kr)
-
-</td>
-<td valign="top">
-
-<img width="400" height="1" />
-
-- [**모던 리액트 Deep Dive**](https://wikibook.co.kr/react-deep-dive/) — React internals, dissected
-- [**npm Deep Dive**](https://wikibook.co.kr/npm-deep-dive/) — The npm ecosystem, explained
-- [**리액트 인터뷰 가이드**](https://wikibook.co.kr/react-interview-guide/) — Translated
-
-</td>
-</tr>
-</table>
+**Books** — [모던 리액트 Deep Dive](https://wikibook.co.kr/react-deep-dive/) · [npm Deep Dive](https://wikibook.co.kr/npm-deep-dive/) · [리액트 인터뷰 가이드](https://wikibook.co.kr/react-interview-guide/)
 
 ---
 
