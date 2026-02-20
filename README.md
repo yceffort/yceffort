@@ -10,13 +10,15 @@ I build things for the web, write books about them, and break them down on my bl
 
 ---
 
-<table width="100%">
+<table>
 <tr>
-<th align="left" width="50%">What I'm up to</th>
-<th align="left" width="50%">Books I wrote</th>
+<th align="left">What I'm up to</th>
+<th align="left">Books I wrote</th>
 </tr>
 <tr>
 <td valign="top">
+
+<img width="400" height="1" />
 
 - Leading frontend at **NAVER Financial**
 - Shipping open-source tooling at [NaverPayDev](https://github.com/orgs/NaverPayDev/repositories)
@@ -24,6 +26,8 @@ I build things for the web, write books about them, and break them down on my bl
 
 </td>
 <td valign="top">
+
+<img width="400" height="1" />
 
 - [**모던 리액트 Deep Dive**](https://wikibook.co.kr/react-deep-dive/) — React internals, dissected
 - [**npm Deep Dive**](https://wikibook.co.kr/npm-deep-dive/) — The npm ecosystem, explained
