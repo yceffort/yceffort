@@ -3,7 +3,7 @@ import { fetchHackerNews } from './sources/hackernews'
 import { curateArticles } from './ai/curator'
 import { sendToDiscord } from './discord/sender'
 import { KV_TTL_SECONDS } from './config'
-import type { Article } from './sources/types'
+import type { Article, CurationResult } from './sources/types'
 
 interface Env {
   ANTHROPIC_API_KEY: string
@@ -54,6 +54,13 @@ async function markAsSent(urls: string[], kv: KVNamespace): Promise<void> {
   )
 }
 
+function removeDuplicatePicksFromCategories(result: CurationResult): void {
+  const pickUrls = new Set(result.picks.map((p) => p.url))
+  for (const key of Object.keys(result.categories) as Array<keyof typeof result.categories>) {
+    result.categories[key] = result.categories[key].filter((a) => !pickUrls.has(a.url))
+  }
+}
+
 async function runPipeline(env: Env): Promise<string> {
   console.log('Fetching articles from all sources...')
   const [rssArticles, hnArticles] = await Promise.all([
@@ -82,6 +89,9 @@ async function runPipeline(env: Env): Promise<string> {
 
   console.log(`Curating ${newArticles.length} articles with Claude...`)
   const curated = await curateArticles(newArticles, env.ANTHROPIC_API_KEY)
+
+  // picks에 선정된 기사를 categories에서 제거 (중복 방지)
+  removeDuplicatePicksFromCategories(curated)
 
   const counts = Object.entries(curated.categories)
     .map(([k, v]) => `${k}: ${v.length}`)
