@@ -14,5 +14,3 @@ export const RSS_FEEDS = [
 export const SUBREDDITS = ['javascript', 'reactjs', 'typescript', 'webdev', 'node']
 
 export const HN_TOP_STORIES_COUNT = 15
-
-export const KV_TTL_SECONDS = 7 * 24 * 60 * 60 // 7일
