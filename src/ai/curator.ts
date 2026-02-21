@@ -17,7 +17,7 @@ const SYSTEM_PROMPT = `당신은 기술 뉴스레터 큐레이터입니다.
    - "web": 웹 표준, 브라우저 API, 웹 성능, Node.js, npm, Rust/WASM 등
    - "frontend": React, Next.js, TypeScript, CSS, UI 프레임워크 등
 2. 각 카테고리별 5~10개 기사를 선정하고 한국어 한줄 설명을 붙여주세요.
-3. 전체 기사 중 독자가 가장 좋아할 기사 3개를 "picks"로 선정하고, 한국어 3-4문장 요약을 작성해주세요.
+3. 전체 기사 중 독자가 가장 좋아할 기사 3개를 "picks"로 선정하고, 한국어 3-4문장 요약을 작성해주세요. picks로 선정된 기사는 categories에 포함하지 마세요.
 4. 광고, 구인 공고, 기술과 무관한 기사는 제외하세요.
 5. 중복 주제는 가장 좋은 것 하나만 선택하세요.
 
@@ -74,5 +74,16 @@ export async function curateArticles(
     throw new Error('Failed to parse AI response as JSON')
   }
 
-  return JSON.parse(jsonMatch[1]) as CurationResult
+  const result = JSON.parse(jsonMatch[1]) as CurationResult
+
+  const pickUrls = new Set(result.picks.map((p) => p.url))
+  for (const key of Object.keys(result.categories) as Array<
+    keyof typeof result.categories
+  >) {
+    result.categories[key] = result.categories[key].filter(
+      (a) => !pickUrls.has(a.url),
+    )
+  }
+
+  return result
 }
