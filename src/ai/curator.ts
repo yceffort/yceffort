@@ -38,7 +38,11 @@ export async function curateArticles(
   apiKey: string,
 ): Promise<CurationResult> {
   const articleList = articles
-    .map((a, i) => `${i + 1}. [${a.source}] ${a.title} — ${a.url}`)
+    .map((a, i) => {
+      let line = `${i + 1}. [${a.source}] ${a.title} — ${a.url}`
+      if (a.description) line += `\n   ${a.description}`
+      return line
+    })
     .join('\n')
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
